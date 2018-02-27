@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Contatos</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        {{ request.user }}
+        <ul>
+            {% if not bola%}
+            <h4>Erro</h4>
+            {% endif %}
+            
+            {% for i in bola%}
+            <li>{{i}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
